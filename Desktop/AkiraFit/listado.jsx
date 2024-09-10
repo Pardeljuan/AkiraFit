@@ -8,9 +8,9 @@ const products = [
         stock: 2,
         description: 'Top lycra Dual Power'
     },
-    {id: '2', name:'Top Ehren', price: 15000, category:'Mujer', img:'./toplycra.jpeg'},
-    {id: '3', name:'Top Ehren', price: 15000, category:'Mujer', img:'./topLycralila.jpeg'},
-    {id: '4', name:'Remera Dual', price: 20000, category:'Hombre', img:'./hombre2.jpeg'}
+    {id: '2', name:'Top Ehren', price: 15000, category:'Mujer',description:'Top Ehren lycra de alta calidad', img:'./toplycra.jpeg'},
+    {id: '3', name:'Top Ehren', price: 15000, category:'Mujer',description:'Top Ehren lycra de alta calidad', img:'./topLycralila.jpeg'},
+    {id: '4', name:'Remera Dual', price: 20000, category:'Hombre',description:'Remera lycra de alta calidad', img:'./hombre2.jpeg'}
 ]
 
 export const getProducts = () => {
