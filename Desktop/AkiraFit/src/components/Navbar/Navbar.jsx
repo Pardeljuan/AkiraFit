@@ -1,17 +1,20 @@
 import { CartWidgets } from "../CartWidgets/CartWidgets";
-import '../../styles/Navbar.scss';
+import './Navbar.scss';
+import { Link, NavLink } from "react-router-dom";
 
-export const Navbar = () => {
+export const NavBar = () => {
     return (
         <nav className="nav-bar">
+            <Link to='/'>
             <div className="logo">
-                <img src="../../../public/akirafit.png" alt="Akira Logo" />
+                <img src="/akirafit.png" alt="Akira Logo" />
             </div>
-            <ul className="nav-links">
-                <li>Hombre</li>
-                <li>Mujer</li>
-                <li>Carrito</li>
-            </ul>
+            </Link>
+            <div className="Categories">
+                <NavLink to={`/category/Hombre`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Hombre</NavLink>
+                <NavLink to={`/category/Mujer`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Mujer</NavLink>
+                <NavLink to={`/category/Todo`} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Listado</NavLink>
+            </div>
             <CartWidgets/>
         </nav>
     )
